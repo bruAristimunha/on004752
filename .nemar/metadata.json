@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Dataset of intracranial EEG, scalp EEG and beamforming sources from epilepsy patients performing a verbal working memory task",
-  "description": "This dataset comprises simultaneous scalp EEG and intracranial EEG (iEEG) recordings from fifteen epilepsy patients undergoing intracranial monitoring while performing a modified Sternberg verbal working memory task. Recordings include depth electrode iEEG, 10-20 scalp EEG, electrode localization (MNI coordinates and anatomical labels), and derived LCMV beamforming virtual sensor data from multiple brain regions (temporal superior lobe, lateral prefrontal cortex, occipital cortex, posterior parietal cortex, and Broca's area). Behavioral data on trial set size, match/mismatch condition, accuracy, and response time are also provided, enabling analyses of memory encoding, maintenance, and recall processes, connectivity, and neural replay.",
-  "methods_description": "Fifteen epilepsy patients undergoing intracranial monitoring performed a modified Sternberg verbal working memory task with temporally separated encoding, maintenance, and recall phases. Simultaneous scalp EEG (10-20 system) and intracranial depth electrode EEG were recorded across multiple sessions (~50 trials each). LCMV beamforming was applied to reconstruct virtual sensor data at specific cortical regions. Data were converted to BIDS format using the bids-starter-kit and custom MATLAB scripts.",
+  "description": "This dataset contains simultaneously recorded scalp EEG and intracranial EEG (depth electrodes) from fifteen epilepsy patients undergoing intracranial monitoring while performing a modified Sternberg verbal working memory task. Encoding, maintenance, and recall are temporally separated. It includes electrode MNI coordinates with anatomical labels, trial-level behavioral information, and LCMV beamforming-reconstructed virtual sensor data for several cortical regions. The data support studies of working memory, connectivity, and replay of memory items.",
+  "methods_description": "Scalp EEG (10-20 system) and depth-electrode iEEG were recorded simultaneously in epilepsy patients performing a modified Sternberg task, with ~50 trials per session across multiple sessions. Virtual EEG sensors were reconstructed with LCMV beamforming at specific brain regions (e.g., auditory cortex, DLPFC, OFC, PPC, V1). Data were converted to BIDS using bids-starter-kid and custom Matlab scripts.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -33,9 +33,13 @@
   },
   "keywords": [
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "scalp EEG"
+    },
+    {
+      "term": "working memory"
     },
     {
       "term": "Epilepsy",
@@ -43,18 +47,7 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "Memory, Short-Term",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D008570"
-    },
-    {
-      "term": "intracranial EEG"
-    },
-    {
       "term": "beamforming"
-    },
-    {
-      "term": "verbal working memory"
     },
     {
       "term": "Sternberg task"
@@ -64,7 +57,7 @@
     {
       "identifier": "10.7554/eLife.78677",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on004752",
@@ -98,7 +91,7 @@
     },
     {
       "funder_name": "Swiss National Science Foundation",
-      "award_number": "SNSF 204651"
+      "award_number": "204651"
     },
     {
       "funder_name": "Alexander S Onassis Foundation",
@@ -112,7 +105,7 @@
     "ieeg"
   ],
   "sizes": [
-    "12.8 GB (152 files)"
+    "11.95 GB (152 files)"
   ],
   "formats": [
     ".edf",
