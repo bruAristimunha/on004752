@@ -33,4 +33,4 @@ bids-starter-kid and custom Matlab scripts were used to convert the dataset into
 
 Add coordsystem.json (Other, MNI template unstated, mm) next to 68 electrodes.tsv (proposal A4, Lane G round 4). Evidence: Every *_electrodes.json says "the MNI coordinate of the electrode"; all MNI templates are in millimetres. The template variant is not stated, so the system is Other with that description (a question for the depositor). Before, readers generated Other / n/a and MNE read the positions as cm (10x too large).
 
-Full evidence per dataset: REPORT-ieeg-locations.md and ieeg_locations.json (Lane G, 19 Oct 2026). This dataset mirrors OpenNeuro; the same change belongs upstream. Local branch only.
+The evidence for this change is stated in this section (the dataset's own files, the cited paper and the identical sibling deposits named above). This dataset mirrors OpenNeuro; the same change belongs upstream.
