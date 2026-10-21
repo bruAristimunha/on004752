@@ -1,5 +1,5 @@
 Unreleased 2026-10-19
-  - 2026-10-19 electrode locations (A4, Lane G round 4): add coordsystem.json (Other, MNI template unstated, mm) next to 68 electrodes.tsv (68 files). README: section 'Electrode locations (19 Oct 2026)'.
+  - 2026-10-19 electrode locations: add coordsystem.json (Other, MNI template unstated, mm) next to 68 electrodes.tsv (68 files). README: section 'Electrode locations (19 Oct 2026)'.
 
 1.0.1 2023-09-20
   - uploaded LCMV beamforming

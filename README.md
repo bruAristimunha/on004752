@@ -31,6 +31,6 @@ bids-starter-kid and custom Matlab scripts were used to convert the dataset into
 
 ## Electrode locations (19 Oct 2026)
 
-Add coordsystem.json (Other, MNI template unstated, mm) next to 68 electrodes.tsv (proposal A4, Lane G round 4). Evidence: Every *_electrodes.json says "the MNI coordinate of the electrode"; all MNI templates are in millimetres. The template variant is not stated, so the system is Other with that description (a question for the depositor). Before, readers generated Other / n/a and MNE read the positions as cm (10x too large).
+Add coordsystem.json (Other, MNI template unstated, mm) next to 68 electrodes.tsv. Evidence: Every *_electrodes.json says "the MNI coordinate of the electrode"; all MNI templates are in millimetres. The template variant is not stated, so the system is Other with that description (a question for the depositor). Before, readers generated Other / n/a and MNE read the positions as cm (10x too large).
 
-The evidence for this change is stated in this section (the dataset's own files, the cited paper and the identical sibling deposits named above). This dataset mirrors OpenNeuro; the same change belongs upstream.
+Source and limitation: the frame and units come from the deposit's own `*_electrodes.json`, which describe x/y/z as MNI coordinates; MNI templates are millimetre spaces. The MNI template variant is not stated, so each coordsystem.json declares `Other` and says so in its description. No coordinate value changed. This dataset mirrors OpenNeuro; the same change belongs upstream.
